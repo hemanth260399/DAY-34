@@ -13,4 +13,15 @@
     <li>I have created the api for "/roomsbookeddata" to show all booked data with the fields(Room_name,Room_status,Customer_name,Date,Start_time,End_time) i set as room_id as name you dont specific name so i use room id as name when you call this api all customer data will display</li>
     <li>I have created the api for "/customerbookeddata" to show the all customer data with the field(Customer_name,Room_name,Date,Start_time,End_time)</li>
     <li>I have created the api "/customerbookdata/" to get a all data of the customer name i use query parameter to get the customer name and i use filter to get data from booking data and displayed with these fields(Customer_name,Room_name,Date,Start_time,End_time,Booking_id,Booking_date,Booking_status) please use customer name for filter</li>
+    <li>
+      1.GET-all detals of rooms-https://day-34.onrender.com/rooms
+      2.POST-Add new room data-https://day-34.onrender.com/rooms
+      3.GET-all details of booking-https://day-34.onrender.com/booking
+      4.POST-ADD new booking data-https://day-34.onrender.com/booking
+      5.GET-all Room with booked data-https://day-34.onrender.com/roomsbookeddata
+      6.GET-all Customer with booked data-https://day-34.onrender.com/customerbookeddata
+      7.GET-Customer details with booked data-https://day-34.onrender.com/customerbookdata?customer_name=<customer-name>
+    </li>
+        <li>All URL are given here</li>
+        <li>In this i used one function mergealldata function i removed but it not commited without that i can get all details in booking data</li>
 </ul>
