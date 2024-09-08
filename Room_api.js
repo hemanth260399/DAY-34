@@ -1,7 +1,7 @@
 import express from "express"
 import { v4 } from "uuid"
 import { rooms, booking } from "./rooms.js";
-import { bookingstatus, mergedata } from "./function.js";
+import { bookingstatus } from "./function.js";
 let server = express()
 server.use(express.json())
 // Get all details of the rooms
@@ -53,8 +53,7 @@ server.post("/booking", (req, res) => {
 // Get all details of the room booked data with field
 server.get("/roomsbookeddata", (req, res) => {
     let tempdata = []
-    let currentmergedata = mergedata()
-    currentmergedata.forEach((data) => {
+    booking.forEach((data) => {
         tempdata.push({
             "Room_name": data.room_id,
             "Room_status": data.booking_status,
@@ -69,8 +68,7 @@ server.get("/roomsbookeddata", (req, res) => {
 // Get all details of the customer booked data with field
 server.get("/customerbookeddata", (req, res) => {
     let tempdata = []
-    let currentmergedata = mergedata()
-    currentmergedata.forEach((data) => {
+    booking.forEach((data) => {
         tempdata.push({
             "Customer_name": data.customer_name,
             "Room_name": data.room_id,
@@ -86,8 +84,7 @@ server.get("/customerbookdata/", (req, res) => {
     let name = req.query
     let availname = booking.find((data) => data.customer_name === name.customer_name)
     if (availname) {
-        let currentmergedata = mergedata()
-        let filterdata = currentmergedata.filter((data) => data.customer_name === name.customer_name)
+        let filterdata = booking.filter((data) => data.customer_name === name.customer_name)
         let tempdata = []
         filterdata.forEach((data) => {
             tempdata.push({

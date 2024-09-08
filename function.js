@@ -12,15 +12,3 @@ export let bookingstatus = (starttime, endtime, Booking_hours = 8) => {
         return "check-in"
     }
 }
-export let mergedata = () => {
-    let mergetemparray = []
-    booking.map((data) => {
-        rooms.map((rdata) => {
-            if (rdata.room_id == data.room_id) {
-                let temparray = { ...rdata, ...data }
-                mergetemparray.push(temparray)
-            }
-        })
-    })
-    return (mergetemparray)
-}

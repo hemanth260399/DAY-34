@@ -60,7 +60,7 @@ export let booking = [{
     "date": "15-07-2023",
     "start_time": "15:15:00",
     "end_time": "23:30:00",
-    "room_id": "0a7d41ca-fdc7-49e0-b404-61f1d1b043c9",
+    "room_id": "5227731e-2c80-4ac8-8195-d66cabe6c414",
     "booking_id": "uh68caf4-e49c-478d-a4c1-efea45dd56q1",
     "booking_status": "check-out",
     "Room_booking_hours": 8
