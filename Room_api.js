@@ -81,7 +81,7 @@ server.get("/customerbookeddata", (req, res) => {
     })
     res.json(tempdata)
 })
-// Get all detail of customer checked IN
+// Get all cutsomer detail of particular name checked IN
 server.get("/customerbookdata/", (req, res) => {
     let name = req.query
     let availname = booking.find((data) => data.customer_name === name.customer_name)
