@@ -10,4 +10,7 @@
     <li>In the booking i write logic when customer try to book the room with room id i will check the room_id is already booked or not if the room not_booked i will allow to book the room if the booked is already booked means i will send the error as sorry the room is already booked if customer book the room i set room_status as booked </li>
     <li>Another logic for room booking is based on room_status if the room status is check_out the room will be free and customer data is added to booking and status as check-out and room_status stay as not_booked from this we can added the old customer data also and multiple data also added</li>
     <li>If the customer checked out output is Recently Check-out by customer_name</li>
+    <li>I have created the api for "/roomsbookeddata" to show all booked data with the fields(Room_name,Room_status,Customer_name,Date,Start_time,End_time) i set as room_id as name you dont specific name so i use room id as name when you call this api all customer data will display</li>
+    <li>I have created the api for "/customerbookeddata" to show the all customer data with the field(Customer_name,Room_name,Date,Start_time,End_time)</li>
+    <li>I have created the api "/customerbookdata/" to get a all data of the customer name i use query parameter to get the customer name and i use filter to get data from booking data and displayed with these fields(Customer_name,Room_name,Date,Start_time,End_time,Booking_id,Booking_date,Booking_status) please use customer name for filter</li>
 </ul>
